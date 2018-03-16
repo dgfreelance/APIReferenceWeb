@@ -1,0 +1,39 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.20]" >
+  <link REL="stylesheet" TYPE="text/css" HREF="backsdk4.css">
+  <script SRC="langref.js"></script>
+  <title>BackendFunctions</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>BackendFunctions</TD></TR>
+</TABLE>
+<!-- ============ MODULE ============ -->
+<h2>BackendFunctions</h2>
+<br>
+Call Unix Script with Parameters
+<!-- ============ INHERITS ============ -->
+<!-- ============ IMPLEMENTS ============ -->
+<!-- ============ PUBLIC ============ -->
+<h3><a name="public"></a>Public:</h3><!-- ============ METHODS ============ -->
+<h4><a name="public_methods"></a>Methods:</h4><table><thead><tr valign="top"><th align="left" width="48%">Name</th><th align="left" width="52%">Description</th></tr></thead><tbody><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;AddResultsSheet2</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;AddStandardResultsSheet</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;AttachFileToTestRun</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;AttachJobFilesToTestRun</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;CallUnixTask</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;CheckIfFilesExistOnServer</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;ChkFileExists</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;executeGenerateCoupons</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;executeWinnerImport</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;ExtractJOBUID</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;FindJobFile</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;GETURL</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;MoveReportToFolder</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;ProcessingWaitTime</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;ProcessReport</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;RequestReport</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;RunAScript</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="BackendFunctions.RunDSR.html">RunDSR</a></td><td width="52%">
+Get DSR<P>su - openbet -c "/opt/openbet/releases/current/scripts/daily_status_rpt/daily_status_rpt.sh -- -jurisdiction BC -start_date 2013-01-24 -end_date 2013-01-25"
+http://svk186/sites/BCLC/Information%20Technology/quality%20and%20compliance%20automation/Automation%20Wiki/Running%20Reports%20-%20DSR.aspx&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;RunGrepCCFromLogs</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;RunGrepPortalForCreditCard</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="BackendFunctions.RunGSR.html">RunGSR</a></td><td width="52%">
+Get GSR<P>su - reports -c "/usr/local/bclotteries/bin/reportGameSales-Full.sh -s 2012-12-03 04:09:00 -e 2012-12-04 04:09:00"
+su - reports -c "/usr/local/bclotteries/bin/reportGameSales.sh -s 2012-12-03 04:09:00 -e 2012-12-04 04:09:00 -j BC"
+su - reports -c "/usr/local/bclotteries/bin/reportGameSales.sh -s 2012-12-03 04:09:00 -e 2012-12-04 04:09:00 -j MB"&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="BackendFunctions.RunGTR.html">RunGTR</a></td><td width="52%">
+Get GTR<P>su - reports -c "/usr/local/bclotteries/bin/reportGameTransactions-Full.sh -s 2012-12-03 04:09:00 -e 2012-12-04 04:09:00"
+su - reports -c "/usr/local/bclotteries/bin/reportGameTransactions.sh -s 2012-12-03 04:09:00 -e 2012-12-04 04:09:00 -j BC"
+su - reports -c "/usr/local/bclotteries/bin/reportGameTransactions.sh -s 2012-12-03 04:09:00 -e 2012-12-04 04:09:00 -j MB"&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="BackendFunctions.RunOpenBetSAP.html">RunOpenBetSAP</a></td><td width="52%">
+Get SAP<P>su - openbet -c "/opt/openbet/releases/current/scripts/sap_extract/sap_extract.sh -- -is_rerun Y -sale_date 2012-12-06"&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;RunVerifyAutoPermissions</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;SearchFileForString</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="BackendFunctions.UidParameter.html">UidParameter</a></td><td width="52%">
+ uid parameter&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;ValidateWinnerImportWorked</td><td width="52%">&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;WaitForChkFile</td><td width="52%">&nbsp;</td></tr></tbody></table>
+<!-- ============ PRIVATE ============ -->
+<DIV class=footer>Build on Thursday, June 04, 2015 by David ARNOLD <BR>Copyright &copy; 2000 - 2003 ABB MC</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>
